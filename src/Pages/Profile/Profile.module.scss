@@ -1,0 +1,60 @@
+.profile{
+    display: grid;
+    grid-template-columns:  1fr;
+    padding: 30px 0;
+    max-width: 390px;
+    margin: 0 auto;
+    background-color:  #e7e6f9;
+}
+.profileSection1{
+   margin-bottom: 25px;
+   border-radius: 10px;
+   background-color: white;
+   padding: 20px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.profileSection2{
+    border-radius: 10px;
+    padding: 20px;
+}
+@media screen and (min-width: 580px) {
+    .profile{
+        padding: 40px 0;
+        max-width: 450px;
+    }
+    .profileSection1{
+        margin-bottom: 35px;
+     }
+}
+@media screen and (min-width: 690px) {
+    .profile{
+        padding: 50px 0;
+    }
+}
+@media screen and (min-width: 960px) {
+    .profile{
+        grid-template-columns:  1fr 1fr;
+        max-width: none;
+        gap: 50px;
+        padding: 50px;
+        height: calc(100vh - 40px);
+    }
+    .profileSection1{
+        margin-bottom: 0;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+    }
+    .profileSection2{
+        margin-bottom: 0;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .profile{
+        gap: 70px;
+        padding: 60px;
+    }
+}
